@@ -30,22 +30,20 @@
             </div>
             </div>
     </header>
-    <main>
-        <h1>Midas token utility</h1>
-        <div class="months">
-            <p class="gray_month" id="first_month">Feb</p>
-            <p class="gray_month" id="second_month">Mar</p>
-            <p class="gray_month" id="third_month">Apr</p>
-            <p class="gray_month" id="fourth_month">Jun</p>
-            <p class="gold_month">Jul</p>
-        </div>
-        <h2>Payout Split</h2>
-        <p class="text_info">10% of rewards earned by Midas platform community is used to <span class="span_white">buyback MIDAS token</span>from the open market</p>
-        <img src="/SVG/" alt="bolt" class="boltsvg">
-
-        <h2>APY Boost</h2>
-        <p class="text_info">10% of rewards earned by Midas platform community is used <span class="span_white">to buyback MIDAS token</span> from the open market</p>
-        <div class="button_learn_more"><a href="form.html">Learn more →</a></div>
+    <main class="reg">
+        <form class="registration" name="contact" method="POST" action="https://httpbin.org/post">
+            <fieldset>
+                <legend>Задание 2</legend>
+                <label><p>Запрос</p>
+                    <input type="url">
+                </label>
+                <label><p>Искать в</p>
+                Тексте<input type="radio" name="radio">
+                Картинках<input type="radio" name="radio">
+                Видео<input type="radio" name="radio">
+            </label>
+            </fieldset>
+            <button type="submit">Send</button>
+            <button type="reset">Remove</button>
+        </form>
     </main>
-</body>
-</html>
