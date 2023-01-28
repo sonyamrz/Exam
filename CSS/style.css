@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Inter:wght@500;600;700&display=swap');
+:root {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 600;
+--black:#262626;
+--white: #FFFFFF;
+background-color: var(--black);
+color: var(--white);
+}
+body{
+    margin:0;
+margin-top: 14px;
+}
+.wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+header {
+   padding-top: 3.5rem;
+   padding-bottom:3.5 rem;
+    }
+    .div2{
+        margin-left: 1.6rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    }
+    .menu{
+        border: 0;
+        background: none;
+        margin: 0;
+    }
+    h1 {
+    width: 320px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 48px;
+    letter-spacing: -0.048em;
+    margin-bottom: 0;
+    padding-left: 20px;
+    }
+    
+    h2 {
+    width: 320px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 20px;
+    letter-spacing: -0.032em;
+    }
+    
+    .text_info {
+    width: 320px;
+    height: 72px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.016em;
+    color: rgba(255, 255, 255, 0.36);
+    padding-left: 20px;
+    }
+    
+    .span_white {
+    opacity: 1;
+    color: white;
+    
+    }
+    
+    .gray_month {
+    /* width: 89px; */
+    /* height: 260px; */
+    width: 14px;
+    height: 8px;
+    font-size: 7.69528px;
+    line-height: 8px;
+    letter-spacing: -0.02em;
+    
+    background: rgba(255, 255, 255, 0.08);
+    
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 9.23434px;
+    margin-right: 7.7px;
+    padding: 86.19px 9.86px 5.85px 10.38px;
+    }
+    
+    .gold_month {
+ 
+    width: 11px;
+    height: 8px;
+    font-size: 7.69528px;
+    line-height: 8px;
+    letter-spacing: -0.02em;
+    
+    background: linear-gradient(43.67deg, #FFC657 24.69%, #FFD977 75.86%);
+    box-shadow: 0px 16px 80px -12px rgba(255, 215, 115, 0.24);
+    border-radius: 9.23434px;
+    margin-top: 54px;
+    padding: 86.19px 11.31px 5.85px 11.94px;
+    }
+    
+    #first_month {
+    margin-left: 20px;
+    margin-top: 65.62px;
+    }
+    
+    #second_month {
+    margin-top: 62.72px;
+    }
+    
+    #third_month {
+    margin-top: 59.81px;
+    }
+    
+    #fourth_month {
+    margin-top: 56.91px;
+    }
+    
+    .months {
+    display: inline-flex;
+    flex-direction: row;
+    }
+    
+    .boltimg {
+    width: 206.4px;
+    height: 206.4px;
+    }
+    
+    .button_learn_more {
+    padding: 12px 108px;
+    margin-left: 20px;
+    
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 24px;
+    color: var(--black);
+    }
+    
+    a {
+    text-decoration: none;
+    color: var(--black);
+    width: 104px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    }
+   
+    .registration{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        line-height: 167%;
+        padding: 3.5rem;
+        align-items:center;
+        max-width: 62rem;
+        margin: 0 auto;
+        text-align: left;
+    } 
+    .registration input{
+        padding: 0.85rem 2.8rem 0.85rem 2.8rem;
+        border: solid var(--custom-property-grey) 0.1rem;
+        border-radius: 9rem;
+        margin-bottom: 2.3rem;
+        box-sizing: border-box;
+    }
+     .registration p {
+        font-size: 1.8rem;
+    }
+    .send{
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 115%;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 9rem;
+        background-color: var(--white);
+        color: var(--black);
+        margin-top: 2.3rem;
+    }
+    
+    .type input {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 5rem 0 0;
+    }
+    
+    section {
+    margin-top: 120px;
+    }
