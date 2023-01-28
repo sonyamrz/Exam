@@ -279,8 +279,8 @@ font-size:1.4rem;
     }
 
     ::selection{
-        background-color: var(--white);
-        color: var(--black);
+        background-color: var(--black);
+        color: var(--white);
         text-shadow:
         1px 0 1px var(--signup),
         0 1px 1px var(--signup),
