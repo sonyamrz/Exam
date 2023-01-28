@@ -6,6 +6,8 @@
     font-weight: 600;
 --black:#262626;
 --white: #FFFFFF;
+--grey: grey;
+--signup: #e1a31e;
 background-color: var(--black);
 color: var(--white);
 }
@@ -20,13 +22,18 @@ margin-top: 14px;
     padding-left: 16px;
     padding-right: 16px;
 }
+.dmenu{
+    display:none;
+}
 header {
    padding-top: 3.5rem;
    padding-bottom:3.5 rem;
     }
     .div2{
-        margin-left: 1.6rem;
-    margin-right: 2rem;
+    margin-left: 1.6rem;
+    margin-right: 0rem;
+    margin-bottom:2rem;
+    margin-top:2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,13 +54,23 @@ header {
     width: 320px;
     height: 96px;
     font-weight: 700;
-    font-size: 200px;
+    font-size: 2.8rem;
     line-height: 48px;
     letter-spacing: -0.048em;
     margin-bottom: 0;
     padding-left: 20px;
     }
-    
+    .div6{
+        align-items:baseline;
+        display: flex;
+        flex-direction: column;
+    }
+    .div5{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
     h2 {
     width: 320px;
     height: 32px;
@@ -63,7 +80,16 @@ header {
     padding-left: 20px;
     letter-spacing: -0.032em;
     }
-    
+    .h11 {
+    font-size: 4rem;
+    padding-top: 1rem;
+}
+.h22{
+    margin-bottom: 3.5rem;
+    padding-top: 1rem;
+    margin-left: 0;
+    font-size: 3rem;
+}
     .text_info {
     width: 320px;
     height: 72px;
@@ -82,8 +108,7 @@ header {
     }
     
     .gray_month {
-    /* width: 89px; */
-    /* height: 260px; */
+  
     width: 14px;
     height: 8px;
     font-size: 7.69528px;
@@ -135,19 +160,26 @@ header {
     flex-direction: row;
     }
     
-    .boltimg {
+    .bolt {
     width: 206.4px;
     height: 206.4px;
     }
     
     .button_learn_more {
-    padding: 12px 108px;
-    margin-left: 20px;
-    
-    position: absolute;
+        display: block;
+        text-align: center;
+    padding: 3rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     background: #FFFFFF;
     border-radius: 24px;
     color: var(--black);
+    max-width: 8rem;
+font-size:1.4rem;
     }
     
     a {
@@ -201,4 +233,63 @@ header {
     
     section {
     margin-top: 120px;
+    }
+    @media (min-width:1220px) {
+.dmenu{
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--grey);
+}
+.divheader{
+    align-items: center;
+    gap:5rem;
+    display: flex;
+    flex-direction: row;
+}
+.divheader2{
+    gap:10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    }
+
+    ::selection{
+        background-color: var(--white);
+        color: var(--black);
+        text-shadow:
+        1px 0 1px var(--signup),
+        0 1px 1px var(--signup),
+        2px 1px 1px var(--signup),
+        1px 2px 1px var(--signup),
+        3px 2px 1px var(--signup),
+        2px 3px 1px var(--signup);
+    }
+    button:hover {
+        box-shadow: inset 0 0 15px 0.5px var(--black);
+    }
+    
+    button:active {
+        transform: scale(0.95);
+        transition: transform 0.2s;
+    }
+    .menu:hover {
+        text-decoration: underline;
+    }
+    
+    .menu:active {
+        transform: scale(0.95);
+        transition: transform 0.2s;
+    }
+    
+    .dmenu:hover {
+        text-decoration: underline;
     }
