@@ -49,6 +49,20 @@
         <h2 class="h22">APY Boost</h2>
         <p class="text_info">10% of rewards earned by Midas platform community is used <span class="span_white">to buyback MIDAS token</span> from the open market</p>
         <a class="button_learn_more" href="form.html">Learn more →</a>
+        <a class="sign openModal" href="#">Sign up</a>
+        <dialog class="modal">
+            <form class="registration" id="form">
+                <legend class="dialogname">Registration</legend>
+                <label><input id="mail" type="email" placeholder="Email" name="Email" 
+                    required> </label>
+                    <label><input type="password" placeholder="Password" name="Password" id="pass" minlength="6" required></label>
+                    <div ><span id="error"></span></div>
+                    <button class="send checkPass" type="button">Check password</button>
+                    <button class="send submit" type="submit">Send</button>
+                    <button class="send closeModal">Close</button>
+            </form>
+        </dialog>
     </main>
+    <script src="/main.js"></script>
 </body>
 </html>
