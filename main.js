@@ -28,18 +28,40 @@ checkPass.addEventListener('pointerup', () =>{
     temp.type = "password"
 })
 
-form.addEventListener("submit", (e) =>{
-    console.table({email: mail.value, password: pass.value});
-    e.preventDefault()
-})
 
 mail.addEventListener("blur", () => {
     if (mail.validity.typeMismatch){
-        error.textContent = "Почта введена некорректно"
+        error.textContent = "Почта введена некорректно!"
+        mail.setCustomValidity("Error!")
+    }
+
+    else if (mail.validity.valueMissing){
+        error.textContent = "Пропущены значения!"
         mail.setCustomValidity("Error!")
     }
     else{
         error.textContent = ""
         mail.setCustomValidity("")
     }
+})
+
+pass.addEventListener("blur", () => {
+    if (pass.validity.tooShort) {
+        error.textContent = "Ошибка! Минимум 6 символов."
+        pass.setCustomValidity("Error!")
+    }
+    else if (pass.validity.valueMissing){
+        error.textContent = "Пропущены значения!"
+        pass.setCustomValidity("Error!")
+    }
+    else
+    {
+        error.textContent = ""
+        pass.setCustomValidity("")
+    }
+}) 
+
+form.addEventListener("submit", (e) =>{
+    console.table({email: mail.value, password: pass.value});
+    e.preventDefault()
 })
